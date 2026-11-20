@@ -1,19 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SaveeTek</title>
 <style>
 *{
 background-color: black;
 color: white;
+font-family: sans-serif;
+}
+.header-container
+{
+display: flex;
+justify-content: space-between;
 }
 
+.header-container h1{
+font-size: 25px;
+}
+
+.header-container p{
+font-size: 12px;
+padding: 10px;
+text-align: center;
+}
+
+main h2{
+font-size: 50px;
+}
+
+footer p{
+font-size: 10px;
+}
+
+.container{
+width: 50%;
+margin-left: auto;
+margin-right: auto;
+margin-top: 100px;
+}
+
+@media (max-width: 768px){
+.container{
+width: 75%;
+margin-left: 20px;
+margin-right: 20px;
+padding: 10px;
+margin-top: 100px;
+}
+
+
+}
 </style>
 </head>
 <body>
+<div class="container">
 <header>
+<div class="header-container">
 <h1>SaveeTek</h1>
 <p>Say hello! hello@saveetek.com</p>
+</div>
 </header>
 <main>
 <h2>We Are Coming Soon</h2>
@@ -21,5 +67,6 @@ color: white;
 <footer>
 <p>SaveeTek &copy; 2026</p>
 </footer>
+</div>
 </body>
 </html>
